@@ -81,15 +81,15 @@ document.getElementById('askNameFromUser').onclick = function(){
         "<div> alert('num2 is greater than num1')}</div>"+"<div>return}</div>" +"<div>else (num2<num1){alert('num2 is greater than num1')</div>"+"<div>return}</div>"
         +"<div>else if(num1==num2){alert('both number are equal')</div>"+"<div>return}</div>" +"<div>else {alert('nothing')}</div>"
     
-    if(num1 > num2){
-      alert("num1 is greater than num2")
+   if(num1 > num2){
+      document.getElementById('output').innerHTML = "num1 is greater than num2"
       return
     }else if(num2 > num1){
-      alert("num2 is greater than num1")
+      document.getElementById('output').innerHTML = "num2 is greater than num1"
       return
 }
   else {
-    alert("both number are equal")
+    document.getElementById('output').innerHTML = "both number are equal"
      }
   }
 
@@ -97,16 +97,16 @@ document.getElementById('askNameFromUser').onclick = function(){
     document.getElementById('ifElseIf').onclick = function(){
         var num1 = +prompt('Please Enter a Number to check the Condition')
         var num2 = +prompt('Please Enter a second Number to check the Condition')
-        if (num1 > num2 ){
+       if (num1 > num2 ){
             alert("Yes its True num1>num2")
         }
         else if (num1 === num2){
-            alert("yes its equal bcz its have same datatype")
+          document.getElementById('output').innerHTML = "yes its equal bcz its have same datatype"
           }else if (num1 <= num2){
-            alert("num1 less than num2")
+            document.getElementById('output').innerHTML = "num1 less than num2"
           }
           else {
-            alert("no its not equal")
+            document.getElementById('output').innerHTML = "no its not equal"
           }
           document.getElementById("originalTextBox").innerHTML = "<div>var num1 = +prompt('Please Enter a Number to check the Condition')</div>" + 
           "<div>var num2 = +prompt('Please Enter a second Number to check the Condition')</div>" + "<div>if (num1 > num2 ){alert('Yes its True num1>num2')}</div>" +
@@ -117,14 +117,14 @@ document.getElementById('askNameFromUser').onclick = function(){
     document.getElementById('testingSetsOfConditions').onclick = function(){
         var age = +prompt('what is your age?')
         var weight = +prompt('what is your Weight?')
-        if ( age >= 18 && weight <= 70){
-         alert("you're a smart man");
+       if ( age >= 18 && weight <= 70){
+          document.getElementById('output').innerHTML = "you're a smart man";
         }
          else if ( age >= 18 && weight > 70){
-         alert("you're a fat man");
+          document.getElementById('output').innerHTML = "you're a fat man";
         }
         else {
-         alert("you're a baby");
+          document.getElementById('output').innerHTML = "you're a baby";
         }
         document.getElementById("originalTextBox").innerHTML = "<div>var age = +prompt('what is your age?')</div>" + "<div>var weight = +prompt('what is your Weight?')</div>" + 
         "<div>if ( age >= 18 && weight <= 70){alert('youre a smart man');}</div>" +"<div> else if ( age >= 18 && weight > 70){alert('youre a fat man');}</div>" +"<div>else {alert('youre a baby');}</div>" 
@@ -135,13 +135,13 @@ document.getElementById('askNameFromUser').onclick = function(){
       if ( age >= 18 ){
         var weight = +prompt('what is your Weight?')
         if ( weight <= 70){
-          alert("you're a smart man");
+          document.getElementById('output').innerHTML = "you're a smart man";
         }
          else{
-          alert("you're a fat man");
+          document.getElementById('output').innerHTML = "you're a fat man";
         }
       } else {
-        alert("you're a baby");
+        document.getElementById('output').innerHTML = "you're a baby";
       }
       document.getElementById("originalTextBox").innerHTML = "<div>var age = +prompt('what is your age?')</div>" + "<div>if ( age >= 18 ){var weight = +prompt('what is your Weight?')</div>" + 
         "<div>if ( weight <= 70){alert('you're a smart man');}</div>" +"<div>  else{ alert'you're a fat man');}}</div>" +"<div>else {alert('youre a baby');}</div>"
@@ -153,25 +153,13 @@ document.getElementById('askNameFromUser').onclick = function(){
       let passWord = prompt('Enter password?')
 
       if(userName === "nothing" &&  passWord === "123"){
-        alert('User logged in')
+        document.getElementById('output').innerHTML = 'User logged in'
       } else {
-        alert('Username or Password is  incorrect.')
+        document.getElementById('output').innerHTML = 'Username or Password is  incorrect.'
       }
       document.getElementById("originalTextBox").innerHTML = "<div>let userName = prompt('Enter user name?')</div>" + "<div>let passWord = prompt('Enter password?')</div>" + 
         "<div>if(userName === 'nothing' &&  passWord === '123'){</div>" +"<div>  alert('User logged in')</div>" +"<div>} else {</div>"+"<div>  alert('Username or Password is  incorrect.')</div>" +"<div>} </div>"
-        // loginOutput()
+    
           
      }
-    //  const loginOutput =()=>{
-    //   if(!"Username or Password is  incorrect."){
-    //     document.getElementById("output").innerHTML = "User logged in"
-    //     return
-    //   }
-    //   else if(!'User logged in'){
-    //     document.getElementById("output").innerHTML = "Username or Password is  incorrect."
-    //   }
-    //   else{
-    //     document.getElementById("output").innerHTML = "Try again"
-    //   }
-
-    //  }
+   
