@@ -1,11 +1,11 @@
-//  let userName = prompt("Please Enter your name to visit our website? ") 
+ let userName = prompt("Please Enter your name to visit our website? ") 
  window.onload = function(){
     let message ="Good Day"
-    let firstName = prompt("Please Enter Your First Name?")
-    let lastName = prompt("Please Enter Your Last Name?")
-    let fullName = firstName +" "+ lastName
+    // let firstName = prompt("Please Enter Your First Name?")
+    // let lastName = prompt("Please Enter Your Last Name?")
+    // let userName = firstName +" "+ lastName
     let banger ="!"
-    document.getElementById("userName").innerHTML = message + " " + fullName + banger
+    document.getElementById("userName").innerHTML = message + " " + userName + banger
  }
   //    Clear Statement Text  //
 document.getElementById('clearstatementButton').onclick = function (){
